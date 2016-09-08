@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Pedometer</string>
+        <string name="action_settings">Settings</string>
+        <string name="title_activity_user_settings">Settings</string>
+        <string name="settings_name">Name</string>
+        <string name="settings_DOB">Date of Birth</string>
+        <string name="settings_radio_male">Male</string>
+        <string name="settingS_radio_female">Female</string>
+        <string name="settings_gender">Gender</string>
+        <string name="settings_radio_metric">Metric</string>
+        <string name="settings_radio_imperial">Imperial</string>
+        <string name="settings_unit">Unit</string>
+        <string name="settings_height">Height (cm or ft.inches)</string>
+        <string name="settings_save">Save</string>
+        <string name="settings_weight">Weight (kg/lb)</string>
+
+</resources>

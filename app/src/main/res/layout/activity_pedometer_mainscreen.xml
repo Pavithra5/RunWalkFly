@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.varshini.pedometer.Pedometer_mainscreen">
+    <include layout="@layout/menu"
+        android:id="@+id/include" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Placeholder Text instead of Tip"
+        android:id="@+id/tipsView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:longClickable="false" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Steps"
+        android:id="@+id/stepsOption"
+        android:layout_above="@+id/resetOption"
+        android:layout_alignStart="@+id/resetOption" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calories"
+        android:id="@+id/caloriesOption"
+        android:layout_alignTop="@+id/stepsOption"
+        android:layout_toEndOf="@+id/stepsOption" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance"
+        android:id="@+id/distanceOption"
+        android:layout_above="@+id/resetOption"
+        android:layout_toStartOf="@+id/resetOption" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:id="@+id/resetOption"
+        android:layout_above="@+id/tipsView"
+        android:layout_centerHorizontal="true"
+        android:onClick="ResetPeriod"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/sensorValue"
+        android:textColor="#1330b0"
+        android:textColorHighlight="#e2d3d3"
+        android:text="v"
+        android:layout_marginBottom="103dp"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignEnd="@+id/stepsOption"
+        android:layout_toEndOf="@+id/distanceOption" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/bluecircle"
+        android:layout_marginBottom="48dp"
+        android:layout_above="@+id/stepsOption"
+        android:layout_alignStart="@+id/distanceOption" />
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="372dp"
+        android:layout_height="69dp"
+        android:layout_marginLeft="20dp"
+        android:weightSum="1">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Home"
+            android:id="@+id/homeScreen" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="61dp"
+            android:layout_height="match_parent"
+            android:text="Graph"
+            android:id="@+id/graphScreen"
+            android:layout_weight="0.15" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="History"
+            android:id="@+id/historyScreen" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Settings"
+            android:id="@+id/settingsScreen" />
+
+    </LinearLayout>
+
+</LinearLayout>
